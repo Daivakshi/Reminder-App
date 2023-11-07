@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Reminder_App</string>
+    <string name="action_settings">Settings</string>
+    <string name="page_view_pills">View Medicine</string>
+    <string name="page_add_pills">Add Medicine</string>
+    <string name="page_calendar">Calendar</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <array name="pillName">
+        <item>Pill 1 #2023-04-04#09:00am</item>
+        <item>Pill 2 #2023-04-04#09:00am</item>
+        <item>Pill 3 #2023-04-04#07:00pm</item>
+    </array>
+
+    <string name="title_activity_calendar">CalendarActivity</string>
+    <string name="Done" />
+    <string name="Skip">Skip</string>
+    <string name="dateTextView">Tap above to add a reminder for this day.</string>
+</resources>

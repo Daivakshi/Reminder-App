@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/todayTitle2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="64dp"
+        android:text="TODAY"
+        android:textAllCaps="true"
+        android:textColor="@color/blue_700"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/todayRecycler"
+        android:layout_width="0dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="64dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todayTitle2">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <ImageButton
+        android:id="@+id/viewPillsBtn"
+        android:layout_width="125dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/white"
+        android:contentDescription="view all pills button"
+        android:elevation="4dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="25dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="25dp"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintStart_toEndOf="@+id/calendarBtn"
+        app:layout_constraintTop_toBottomOf="@+id/todayRecycler"
+        app:srcCompat="@drawable/pills_solid"
+        app:tint="@color/blue_700" />
+
+    <ImageButton
+        android:id="@+id/addPillBtn"
+        android:layout_width="125dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/white"
+        android:contentDescription="view all pills button"
+        android:elevation="4dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="20dp"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintStart_toEndOf="@+id/viewPillsBtn"
+        app:layout_constraintTop_toBottomOf="@+id/todayRecycler"
+        app:srcCompat="@drawable/plus_solid"
+        app:tint="@color/blue_700" />
+
+    <ImageButton
+        android:id="@+id/calendarBtn"
+        android:layout_width="125dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/white"
+        android:contentDescription="calendar button"
+        android:elevation="4dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="20dp"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todayRecycler"
+        app:srcCompat="@drawable/calendar"
+        app:tint="@color/blue_700" />
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="125dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="92dp"
+        android:background="@color/white"
+        android:contentDescription="settings button"
+        android:elevation="4dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingRight="30dp"
+        android:paddingBottom="20dp"
+        android:scaleType="fitXY"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:layout_constraintStart_toEndOf="@+id/addPillBtn"
+        app:layout_constraintTop_toBottomOf="@+id/todayRecycler"
+        app:srcCompat="@drawable/gear_solid"
+        app:tint="@color/blue_700" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

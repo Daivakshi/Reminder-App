@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarActivity">
+
+    <!-- References:
+    https://www.geeksforgeeks.org/android-creating-a-calendar-view-app/
+    Used to create a CalendarView to display a Calendar
+    -->
+
+    <TextView
+        android:id="@+id/dateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginBottom="250dp"
+        android:text="@string/dateTextView" />
+
+    <!-- Decided to use marginStart attributes to better support right to left layouts, as suggested by Android Studio -->
+
+    <!-- Use the CalendarView class which creates a calendar widget to display and select dates. -->
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center_vertical">
+
+    </CalendarView>
+
+</RelativeLayout>
